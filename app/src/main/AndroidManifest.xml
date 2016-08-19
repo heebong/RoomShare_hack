@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.tcardv">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".Splash"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Writing" android:label="@string/writing">
+        </activity>
+
+
+        <activity android:name=".SeeRoomInfo" android:label="방 정보 보기"></activity>
+
+        <activity android:name=".Scrap" android:label="스크랩"></activity>
+
+        <activity android:name=".Room1" android:label="방 정보 보기"></activity>
+
+        <activity android:name=".MySeeRoomInfo_show" android:label="내 방 정보 보기"></activity>
+        <activity android:name=".MySeeRoomInfo_edit" android:label="내 방 정보 수정"></activity>
+
+    </application>
+
+</manifest>
